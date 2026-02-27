@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Portfolio | Software Developer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-blob"></div>
+    <div class="cursor-blob-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="#" class="logo">A<span class="accent-text">.</span>Dev</a>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-btn">Contact Me</a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-padding">
+        <div class="hero-content fade-in-up">
+            <p class="greeting">Hi, I'm <span class="accent-text">Alex</span></p>
+            <h1 class="hero-title">Crafting digital <br>experiences that <span class="gradient-text type-effect">matter.</span></h1>
+            <p class="hero-subtitle">Frontend Developer & UI/UX Designer specializing in building exceptional, high-quality websites and applications.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in scroll-parallax">
+            <div class="visual-container glass-card">
+                 <img src="assets/profile.webp" alt="Alex Developer Portrait" id="profile-img" class="floating-img">
+                 <div class="tech-stack-badges">
+                    <span class="badge" style="--d: 0.2s">React</span>
+                    <span class="badge" style="--d: 0.4s">Node.js</span>
+                    <span class="badge" style="--d: 0.6s">UI/UX</span>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding staggered-reveal">
+        <div class="section-header">
+            <h2 class="section-title">01. <span class="accent-text">About Me</span></h2>
+        </div>
+        <div class="about-content grid-2-col">
+            <div class="about-text glass-card">
+                <p>Hello! My name is Alex and I enjoy creating things that live on the internet. My interest in web development started back in 2018 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
+                <p>Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.</p>
+            </div>
+            <div class="about-stats glass-card grid-2-col">
+                 <div class="stat-item">
+                     <span class="stat-number">5+</span>
+                     <span class="stat-label">Years of<br>Experience</span>
+                 </div>
+                 <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects<br>Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Happy<br>Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Design<br>Awards</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding staggered-reveal">
+        <div class="section-header">
+             <h2 class="section-title">02. <span class="accent-text">My Arsenal</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category glass-card hover-glow">
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li>JavaScript (ES6+)</li>
+                    <li>React & Redux</li>
+                    <li>Next.js</li>
+                    <li>TypeScript</li>
+                    <li>HTML5 & CSS3/Sass</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card hover-glow">
+                <h3>Backend</h3>
+                <ul class="skill-list">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>Python & Django</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>RESTful APIs</li>
+                </ul>
+            </div>
+            <div class="skill-category glass-card hover-glow">
+                <h3>Tools & Design</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>Docker</li>
+                    <li>AWS / Vercel</li>
+                    <li>Figma</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding staggered-reveal">
+        <div class="section-header">
+            <h2 class="section-title">03. <span class="accent-text">Featured Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card hover-lift">
+                <div class="project-img-wrapper">
+                    <img src="assets/project1.webp" alt="Nexus Dashboard Analytics Platform" loading="lazy">
+                    <div class="project-links-overlay">
+                        <a href="#" class="icon-link" aria-label="GitHub Repository"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        <a href="#" class="icon-link" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">Nexus Dashboard</h3>
+                    <p class="project-desc">A complex analytics dashboard for visualizing large datasets in real-time. Features dark mode, customizable widgets, and seamless data syncing via WebSockets.</p>
+                    <ul class="project-tech-list">
+                        <li>React</li>
+                        <li>D3.js</li>
+                        <li>Node.js</li>
+                        <li>Socket.io</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card glass-card hover-lift">
+                <div class="project-img-wrapper">
+                    <img src="assets/project2.webp" alt="Aura E-Commerce Headless Storefront" loading="lazy">
+                    <div class="project-links-overlay">
+                        <a href="#" class="icon-link" aria-label="GitHub Repository"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        <a href="#" class="icon-link" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-overline">E-Commerce</p>
+                    <h3 class="project-title">Aura Headless Store</h3>
+                    <p class="project-desc">A modern, headless e-commerce storefront built for performance. Integrates with Shopify Storefront API and features a blazing fast custom cart and checkout flow.</p>
+                    <ul class="project-tech-list">
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Shopify API</li>
+                        <li>Tailwind</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card glass-card hover-lift">
+                <div class="project-img-wrapper">
+                    <img src="assets/project3.webp" alt="Flux Task Management App" loading="lazy">
+                    <div class="project-links-overlay">
+                        <a href="#" class="icon-link" aria-label="GitHub Repository"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        <a href="#" class="icon-link" aria-label="External Link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p class="project-overline">SaaS Application</p>
+                    <h3 class="project-title">Flux Task Manager</h3>
+                    <p class="project-desc">A collaborative task management tool designed for creative teams. Includes drag-and-drop kanban boards, real-time updates, and role-based access control.</p>
+                    <ul class="project-tech-list">
+                        <li>Vue 3</li>
+                        <li>Supabase</li>
+                        <li>Pinia</li>
+                        <li>CSS Modules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding staggered-reveal">
+        <div class="contact-container glass-card">
+            <h2 class="section-title">04. <span class="accent-text">What's Next?</span></h2>
+            <h3 class="contact-heading">Get In Touch</h3>
+            <p class="contact-desc">Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:hello@example.com" class="btn btn-primary lg">Say Hello</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <!-- GitHub -->
+                <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <!-- LinkedIn -->
+                <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                <!-- Twitter/X -->
+                <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+            </div>
+            <p>Designed & Built by Alex <br><span class="footer-meta">Vanilla HTML, CSS, JS</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
